@@ -3,4 +3,32 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    height: 100%;
 }
+
+html  { 
+    margin: 0;
+    height: 100%;
+}
+
+.footer { 
+    background-color:#C5C6C7;
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+/* 
+Color scheme - 
+BLACK -     #0B0C10
+DARK BLUE - #1F2833
+GREY -      #C5C6C7
+LIGHT BLUE  #66FCF1
+MID BLUE    #45A29E
+
+
+credit https://visme.co/blog/website-color-schemes/
+12 - Striking and Simple
+*/
