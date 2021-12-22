@@ -1,9 +1,13 @@
 let leftNum, rightNum = '';
 let currentOperator;
 
+const numberButtons = document.querySelectorAll(".button");
 
-
-
+numberButtons.forEach(function (button) {
+    button.addEventListener("click", () => {
+        UpdateNumber(button.textContent);
+    });
+});
 
 
 
