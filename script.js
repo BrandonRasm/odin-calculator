@@ -6,6 +6,7 @@ let currentOperator;
 const numberButtons = document.querySelectorAll(".number");
 const operatorButtons = document.querySelectorAll(".operator");
 const inputDisplay = document.querySelector(".inputs");
+const equalsButton = document.querySelector(".equals");
 
 numberButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -25,6 +26,10 @@ operatorButtons.forEach(ops => {
 
         UpdateOperator(opsFunction, ops.textContent);
     });
+});
+equalsButton.addEventListener("click", () => {
+
+    Calculate();
 });
 
 
@@ -46,7 +51,9 @@ function UpdateOperator(selected, opsText) {
     RefreshDisplay();
 }
 function Calculate() {
-    leftNum = currentOperator(leftNum, rightNum);
+    if (currentOperator != undefined && rightNum !== '') {
+        leftNum = currentOperator(leftNum, rightNum);
+    }
     currentOperator = undefined;
     rightNum = '';
     RefreshDisplay();
@@ -54,7 +61,7 @@ function Calculate() {
 
 //Updates the text display.
 function RefreshDisplay() {
-    currentOpText = currentOpText ? currentOpText : '';
+    currentOpText = currentOperator ? currentOpText : '';
 
     inputDisplay.textContent = `${leftNum} ${currentOpText} ${rightNum}`;
 }
