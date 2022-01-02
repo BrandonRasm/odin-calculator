@@ -69,7 +69,7 @@ function Subtract(a, b) {
 }
 function Divide(a, b) {
     const roundAmount = 100000; //placeholder amount for decimals
-    return Math.round(((parseFloat(a) / parseFloat(b)) * roundAmount) / roundAmount);
+    return Math.round((parseFloat(a) / parseFloat(b)) * roundAmount) / roundAmount;
 }
 
 function Multiply(a, b) {
