@@ -56,8 +56,8 @@ function Calculate() {
 //Updates the text display.
 function RefreshDisplay() {
     currentOpText = currentOpText ? currentOpText : '';
-    console.log(`refresh the display with : ${leftNum} ${currentOpText} ${rightNum}`);
 
+    inputDisplay.textContent = `${leftNum} ${currentOpText} ${rightNum}`;
 }
 
 
