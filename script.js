@@ -18,13 +18,12 @@ operatorButtons.forEach(ops => {
         case '+': opsFunction = Add; break;
         case '-': opsFunction = Subtract; break;
         case 'x': opsFunction = Multiply; break;
-        case '%': opsFunction = Divide; break;
+        case '/': opsFunction = Divide; break;
         default: alert("something went wrong! in setting operator event listeners");
     }
-    operatorString = ops.textContent;
     ops.addEventListener("click", () => {
 
-        UpdateOperator(opsFunction, operatorString);
+        UpdateOperator(opsFunction, ops.textContent);
     });
 });
 
