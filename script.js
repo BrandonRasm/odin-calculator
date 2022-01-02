@@ -5,6 +5,7 @@ let currentOperator;
 
 const numberButtons = document.querySelectorAll(".number");
 const operatorButtons = document.querySelectorAll(".operator");
+const inputDisplay = document.querySelector(".inputs");
 
 numberButtons.forEach(button => {
     button.addEventListener("click", () => {
