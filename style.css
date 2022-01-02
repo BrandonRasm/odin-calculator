@@ -20,6 +20,29 @@ html  {
     padding: 1em;
 }
 
+.calc { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.row { 
+    background-color: darkblue;
+    display: flex;
+
+}
+
+button { 
+
+    width: 25%;
+
+}
+
+.equals,.clear { 
+    flex:1;
+}
+
 /* 
 Color scheme - 
 BLACK -     #0B0C10
