@@ -30,17 +30,36 @@ html  {
 .row { 
     background-color: darkblue;
     display: flex;
-
+    padding: 0px 0px;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
 }
 
 button { 
 
     width: 25%;
-
+    padding: 1px 6px;
 }
 
-.equals,.clear { 
-    flex:1;
+.spacer button { 
+    flex: 1 1 0;
+}
+
+.spacer  { 
+    flex: 1 1 0;
+    display: flex ;
+
+
+    min-width: 0;
+}
+
+.clear, .equals { 
+    flex: 1 1 0;
+}
+
+.row, .spacer  { 
+    gap: 5px;
 }
 
 /* 
